@@ -34,7 +34,6 @@ function AppHeader() {
             <Link href="#faq" title="CRITERIA" />
             <Link href="#works" title="TUTORIAL" />
             <Link href="#char" title="CHARACTER" />
-            
           </Anchor>
         </div>
         <div className="mobileVisible">
