@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState, useCallback } from "react";
 import { useTransition, animated } from "react-spring";
+import {Animated} from "react-animated-css";
 
 const steps = [
   {

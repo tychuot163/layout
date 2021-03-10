@@ -1,6 +1,6 @@
 import React from 'react';
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
-
+import {Animated} from "react-animated-css";
 
 
 const Page = ({ offset, caption, first, second, third, gradient, onClick }) => (
@@ -19,7 +19,7 @@ const Page = ({ offset, caption, first, second, third, gradient, onClick }) => (
 
     <ParallaxLayer className="text header-faq" offset={offset} speed={0.4}>
       <span>
-        <p style={{ fontSize: 20 }}>{caption}</p>
+        <p style={{ fontSize: 40 }}>{caption}</p>
         <div className={`stripe ${gradient}`} />
         <p>{first}</p>
         <p>{second}</p>
@@ -34,6 +34,7 @@ class AppFaq extends React.Component {
   scroll = (to) => this.refs.parallax.scrollTo(to)
   render() {
     return (
+      <Animated animationIn="fadeInLeft" animationOut="fadeOutDown" animationInDuration={2000} animationOutDuration={2000} isVisible={true}>
       <div id="faq" className="block-faq FaQBlock">
         <Parallax className="container" ref="parallax" pages={5} horizontal scrolling={false}>
           <Page offset={0} gradient="pink" caption='Bring good experience'
@@ -46,7 +47,6 @@ class AppFaq extends React.Component {
             second="- Improve student ability to receptive new lecture"
             third="- Improve student brain-storming and solving case-study"
             onClick={() => this.scroll(2)} />
-
           <Page offset={2} gradient="pacific-dream" caption="Quickly Respond"
             first="- Functions and features respond fast to user interaction"
             second="- Quickly respond at use time"
@@ -61,9 +61,8 @@ class AppFaq extends React.Component {
           third ="- Tranning high specialize skill from products, customer services" 
           onClick={() => this.scroll(0)} />
         </Parallax>
-
       </div>
-
+      </Animated>
     )
   }
 }

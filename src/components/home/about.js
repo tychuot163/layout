@@ -6,6 +6,7 @@ import { Row, Col } from 'antd';
 import icon1 from "../common/images/gamepad.png"
 import icon2 from "../common/images/flat-design1.png"
 import icon3 from "../common/images/hight-performance.png"
+import {Animated} from "react-animated-css";
 
 const items = [
   {
@@ -30,7 +31,7 @@ const items = [
 
 function AppAbout() {
   return (
-    <div id="about" className="block aboutBlock">
+ <div id="about" className="block aboutBlock">
       <div className="container-fluid">
         <div className="titleHolder">
           <h2>About Us</h2>
@@ -41,6 +42,7 @@ function AppAbout() {
             
           </p>
         </div>
+        <Animated animationIn="lightSpeedIn" animationOut="fadeOutDown" animationInDuration={2000} animationOutDuration={2000} isVisible={true}>
         <Row gutter={[16, 16]}>   
           {items.map(item => {
             return (
@@ -56,6 +58,7 @@ function AppAbout() {
             );
           })}
         </Row>
+        </Animated> 
       </div>
     </div>
   );

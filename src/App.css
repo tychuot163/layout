@@ -489,7 +489,7 @@ how it works
   background-attachment: fixed;
   color                : #fff;
   position             : relative;
-  height               : 90vh;
+  height               : 60vh;
 }
 
 .worksBlock:before {
@@ -727,7 +727,7 @@ character block
 .characterBlock .step-content h2 {
   position: relative;
   display: flex;
-  width: 370px;
+  width: 300px;
   height: 54px;
   font-size: 24px;
   color: #24333c;

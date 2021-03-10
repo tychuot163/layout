@@ -20,7 +20,7 @@ function AppFooter() {
             </div>
           </Col>
           <Col span={6} style={{ float: "right" }}>
-            <h5>Socials</h5>
+            <p>Socials</p>
             <ul className="socials">
               <li><a href="https://www.facebook.com/truongdaihocvanlang" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
               <li><a href="https://www.youtube.com/user/truongdhvanlang/" target="_blank"><i className="fab fa-youtube"></i></a></li>

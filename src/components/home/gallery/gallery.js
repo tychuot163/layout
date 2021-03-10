@@ -4,6 +4,7 @@ import shuffle from 'lodash/shuffle'
 import useMeasure from './useMeasure'
 import useMedia from './useMedia'
 import data from './data'
+import {Animated} from "react-animated-css";
 
 
 function AppGallery() {
@@ -36,7 +37,8 @@ function AppGallery() {
     })
     // Render the grid
     return (
-        <div id="gar" className="block galleryBlock">
+        <Animated animationIn="fadeInLeft" animationOut="fadeOutDown" animationInDuration={2000} animationOutDuration={2000} isVisible={true}>
+         <div id="gar" className="block galleryBlock">
             <div className="container-fluid-gar">
                 <div className="titleHolder">
                     <h2>Gallery</h2>
@@ -52,6 +54,8 @@ function AppGallery() {
 
             </div>
         </div>
+        </Animated>
+      
     )
 }
 export default AppGallery
