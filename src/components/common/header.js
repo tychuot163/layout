@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { Anchor, Drawer, Button } from 'antd';
 
 import logo from './images/completion.png'
+import logo2 from './images/completion2.png'
 
 const { Link } = Anchor;
 
@@ -23,7 +24,7 @@ function AppHeader() {
     <div className="container-fluid">
       <div className="header">
         <div className="logo">
-        <a href="hero"> <img src={logo}  /> </a>
+        <a href="hero"> <img src={logo2}  /> </a>
           
         </div>
         <div className="mobileHidden">

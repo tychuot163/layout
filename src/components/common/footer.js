@@ -5,6 +5,7 @@ import React from 'react';
 import { BackTop, Row, Col } from 'antd';
 
 import logo from './images/completion.png'
+import logo2 from './images/completion2.png'
 
 function AppFooter() {
   return (
@@ -16,7 +17,7 @@ function AppFooter() {
           </Col>
           <Col span={12} style={{ justifyContent: "center" }}>
             <div className="logo">
-              <a href="hero"> <img src={logo} /> </a>
+              <a href="hero"> <img src={logo2} /> </a>
             </div>
           </Col>
           <Col span={6} style={{ float: "right" }}>

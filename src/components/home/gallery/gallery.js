@@ -42,7 +42,7 @@ function AppGallery() {
             <div className="container-fluid-gar">
                 <div className="titleHolder">
                     <h2>Gallery</h2>
-                    <p>Hình ảnh chân thực 	&amp; sống động</p>
+                    <p>Fascinating photos &amp; lively</p>
                 </div>
             </div>
             <div {...bind} class="list" style={{ height: Math.max(...heights) }}>
@@ -55,7 +55,6 @@ function AppGallery() {
             </div>
         </div>
         </Animated>
-      
     )
 }
 export default AppGallery
