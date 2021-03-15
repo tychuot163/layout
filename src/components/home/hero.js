@@ -10,7 +10,7 @@ import { Button } from 'antd';
 function Counter() {
   return (
     <div class="counter">
-      <a style={{color: '#FFC75F'}}
+      <a
       class="enterNameButton vertical-center ">PLAY GAME</a>
     </div>
   )

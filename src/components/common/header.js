@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { Anchor, Drawer, Button } from 'antd';
 
 import logo from './images/completion.png'
-import logo2 from './images/completion2.png'
+import logo2 from './images/logo Fix 1.png'
 
 const { Link } = Anchor;
 
