@@ -71,15 +71,6 @@ function AppCharacter() {
     <div id="char" className="block characterBlock">
       <div className="container">
         <ul className="step-list">
-          <li className="step-overlay">
-            <button className="prev-button" onClick={prev}>
-              &lsaquo;
-          </button>
-            <button className="next-button" onClick={next}>
-              &rsaquo;
-          </button>
-          </li>
-
           {transitions.map(({ item, key }) => {
             let step = steps[item];
 

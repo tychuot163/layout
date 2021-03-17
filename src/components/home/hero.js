@@ -3,9 +3,6 @@ import { useSpring, a } from 'react-spring'
 import 'prismjs'
 import 'prismjs/components/prism-jsx.min'
 import 'prismjs/themes/prism-okaidia.css'
-import { Button } from 'antd';
-
-
 
 function Counter() {
   return (
@@ -40,9 +37,7 @@ function AppHero() {
       </a.div>
           <a.div class="male" style={{ transform: props.xy.interpolate(trans4) }} />
           <a.div class="female" style={{ transform: props.xy.interpolate(trans7) }} />
-          {/* <a.div class="playgame" style={{ transform: props.xy.interpolate(trans6) }} /> */}
           <a.div class="leaves1" style={{ transform: props.xy.interpolate(trans5) }} />
-          {/* <span class="header-left"><span style={{ color: 'darkred' }}>VL-</span>LEGEND</span> */}
         </div>
       </div>
   );
